@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: avenir;
+  display: flex;
+  flex-direction: column;
+  min-height: 130vh;
+  background-color: rgb(243, 243, 243);
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(243, 243, 243);
+  border-bottom: 1px solid #ccc;
+}
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_links a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: worksans-semibold, "work sans", sans-serif; /* Match button font */
+  color: rgb(75, 65, 65);
+}
+
+.header {
+  text-align: start;
+  font-size: 20px;
+  padding-top: 155px;
+  padding-left: 155px;
+  font-family: worksans-semibold, "work sans", sans-serif;
+}
+
+.WorkExperience {
+  display: flex;
+  gap: 30%;
+  padding-left: 155px;
+  padding-top: 75px;
+}
+
+.MOAVT h2 {
+  font-size: 18px;
+}
+
+.MOAVT {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.WorkExperience_countener {
+  padding-left: 780px;
+  width: 340px;
+}
+
+.MOSSC {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 730px;
+  padding-top: 10px;
+}
+
+.MOSSC h2 {
+  font-size: 18px;
+}
+
+.SSIUCL {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 730px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #ccc;
+}
+
+.SSIUCL h2 {
+  font-size: 18px;
+}
+
+.Education {
+  display: flex;
+  gap: 450px;
+  padding-left: 155px;
+  padding-top: 30px;
+}
+
+.Poly {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.Poly h2 {
+  font-size: 18px;
+}
+
+.HighScool {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 677px;
+  padding-top: 10px;
+}
+
+.HighScool h2 {
+  font-size: 18px;
+}
+
+.UniOfJeddah {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 655px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.UniOfJeddah h2 {
+  font-size: 18px;
+}
+
+.Skills {
+  padding: 30px 155px;
+}
+
+.Skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Teamwork {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 250px;
+}
+
+.skill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid rgb(75, 65, 65);
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(75, 65, 65);
+  font-family: worksans-semibold, "work sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  cursor: pointer;
+  flex: 1 1 calc(10% - 5px);
+}
+
+.skill:hover {
+  background-color: rgb(75, 65, 65);
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(243, 243, 243);
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+}
+
+.footer_section {
+  text-align: center;
+}
+
+.footer_section h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.footer_section p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.footer_section span {
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #nav_bar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ContectHeader,
+  .header {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .PhoneHeader,
+  .EmailHeader {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .Skills,
+  .Education,
+  .WorkExperience {
+    padding-left: 20px;
+  }
+
+  .Teamwork {
+    padding-left: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav_bar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ContectHeader,
+  .header {
+    font-size: 30px;
+    padding-top: 80px;
+    padding-left: 10px;
+  }
+
+  .PhoneHeader,
+  .EmailHeader {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .Skills,
+  .Education,
+  .WorkExperience {
+    padding-left: 10px;
+  }
+
+  .Teamwork {
+    padding-left: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav_links a {
+    font-size: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .footer_section h4 {
+    font-size: 18px;
+  }
+
+  .footer_section p {
+    font-size: 16px;
+  }
+}
